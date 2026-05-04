@@ -82,6 +82,7 @@ pipeline {
                 }
             }
         }
+        }
         stage('EKS and Kubectl configuration'){
             steps{
                 script{

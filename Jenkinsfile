@@ -78,8 +78,8 @@ pipeline {
                 script{
                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
     sh "docker logout"
-    sh "echo ${dockerhubpwd} | docker login -u divekarsiddhi --password-stdin"
-    sh "docker push divekarsiddhi/ekart:latest"
+    sh "echo ${dockerhubpwd} | docker login -u siddhijagtap --password-stdin"
+    sh "docker push siddhijagtap/ekart:latest"
 }
 }
                 }

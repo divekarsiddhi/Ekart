@@ -77,7 +77,7 @@ pipeline {
             steps{
                 script{
                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-                    sh 'docker login -u divekarsiddhi --password-stdin'
+                   sh 'docker login -u siddhijagtap -p ${dockerhubpwd}'
                    sh 'docker push divekarsiddhi/ekart:latest'
                 }
             }

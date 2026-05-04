@@ -1,4 +1,4 @@
-FROM eclipse-temurin:8-jdk-alpine
+FROM openjdk:8u151-jdk-alpine3.7
 
 EXPOSE 8070
 
